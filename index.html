@@ -19,22 +19,22 @@
 
   <form id="form">
     <div>
-      <label id="name-label" for="name"> Name</label>
+      <label for="name"> Name</label>
       <input type="text" name="name" id="name" class= "input-field" placeholder="Please Enter Name" required>
     </div><br>
 
     <div>
-      <label id="email-label" for="name"> Email</label>
+      <label for="email"> Email</label>
       <input type="email" name="email" id="email" class="input-field" placeholder="Please Enter Email" required>
     </div><br>
 
     <div>
-      <label id="number-label" for="name"> Age</label>
+      <label for="number"> Age</label>
       <input type="number" name="age" id="number" min="18" max="100" class="input-field" placeholder="Age" required>
     </div><br><hr>
 
     <div>
-      <label id="dropdown-label" for="name"> Which option best describes your status?</label>
+      <label for="name"> Which option best describes your status?</label>
       <div>
         <select type="dropdown" name="status" id=dropdown class="dropdown">
             <option disabled value= rando>Select an Option</option>
@@ -47,29 +47,27 @@
       </div>
     </div><br>
 
-    <div id="radio">
-      <label id="radio-label" for="name">How would you rate costumer service?</label><br>
-
-      <label><input class=radio value="5" type="radio" name="radio">Great</label><br>
-      <label><input class=radio value="4" type="radio" name="radio">Somewhat Good</label><br>
-      <label><input class=radio value="3" type="radio" name="radio">Neutral</label><br>
-      <label><input class=radio value="2" type="radio" name="radio">Somewhat bad</label><br>
-      <label><input class=radio value="1" type="radio" name="radio">Terrible</label<br>
+    <div class="radio">
+      <span>How would you rate costumer service?</span>
+      <div><input id="radio1" value="5" type="radio" name="rate"><label for="radio1" >Great</label></div>
+      <div><input id="radio2" value="4" type="radio" name="rate"><label for="radio2" >Somewhat Good</label></div>
+      <div><input id="radio3" value="3" type="radio" name="rate"><label for="radio3" >Neutral</label></div>
+      <div><input id="radio4" value="2" type="radio" name="rate"><label for="radio4" >Somewhat bad</label></div>
+      <div><input id="radio5" value="1" type="radio" name="rate"><label for="radio5" >Terrible</label></div>
         </div><br>
 
     <div class="checkbox">
-        <label id="checkbox-label" for="name">Check all products/services you regularly buy from here.</label><br>
-
-        <label><input name="checkbox" value ="1" type="checkbox">Gas</label><br>
-        <label><input name="checkbox" value ="2" type="checkbox">Lottery</label><br>
-        <label><input name="checkbox" value ="3" type="checkbox">Grocery</label><br>
-        <label><input name="checkbox" value ="4" type="checkbox">Beer/Alcohol</label><br>
-      <label><input name="checkbox" value ="5" type="checkbox">Cigarettes/tobacco</label> 
+        <span>Check all products/services you regularly buy from here.</span>
+        <div><input id="check1" name="checkbox" value ="1" type="checkbox"><label for="check1">Gas</label>
+        <div><input id="check2" name="checkbox" value ="2" type="checkbox"><label for="check2">Lottery</label>
+        <div><input id="check3" name="checkbox" value ="3" type="checkbox"><label for="check3">Grocery</label>
+        <div><input id="check4" name="checkbox" value ="4" type="checkbox"><label for="check4">Beer/Alcohol</label>
+        <div><input id="check5" name="checkbox" value ="5" type="checkbox"><label for="check5">Cigarettes/tobacco</label> 
     </div><br><hr>
      
           
-    <label id=closing-label for="name">Please list any additional questions or concerns below!</label><br>
-    <textarea id="commments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter here..."></textarea><br>
+    <label id=closing-label for="comments">Please list any additional questions or concerns below!</label>
+    <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter here..."></textarea><br>
     <div style=text-align:center;>
       <button id="submit" type="submit">Submit</button>
       <script> function thankYou(){
